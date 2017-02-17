@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170209 23:20:55.803" generator="Robot 3.0.1 (Python 2.7.13 on win32)">
+<suite source="C:\Users\hemmoi\react\Demopage\robot\tests\demo.robot" id="s1" name="Demo">
+<kw type="setup" name="Insert Testing Data" library="Common">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Setting up test suite...</arg>
+</arguments>
+<msg timestamp="20170209 23:20:55.972" level="INFO">Setting up test suite...</msg>
+<status status="PASS" endtime="20170209 23:20:55.972" starttime="20170209 23:20:55.972"></status>
+</kw>
+<status status="PASS" endtime="20170209 23:20:55.972" starttime="20170209 23:20:55.972"></status>
+</kw>
+<test id="s1-t1" name="User can browse all page tabs">
+<kw type="setup" name="Begin web test" library="Common">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20170209 23:20:55.972" level="INFO">Opening browser 'chrome' to base url 'about:blank'</msg>
+<status status="PASS" endtime="20170209 23:20:59.473" starttime="20170209 23:20:55.972"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20170209 23:21:00.765" starttime="20170209 23:20:59.473"></status>
+</kw>
+<status status="PASS" endtime="20170209 23:21:00.765" starttime="20170209 23:20:55.972"></status>
+</kw>
+<kw name="Browse all tabs" library="DemopageApp">
+<kw name="Load Landing Page" library="Info">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${START_URL}</arg>
+</arguments>
+<msg timestamp="20170209 23:21:00.781" level="INFO">Opening url 'localhost:3000'</msg>
+<status status="PASS" endtime="20170209 23:21:01.449" starttime="20170209 23:21:00.781"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20170209 23:21:04.459" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20170209 23:21:04.459" starttime="20170209 23:21:01.449"></status>
+</kw>
+<status status="PASS" endtime="20170209 23:21:04.459" starttime="20170209 23:21:00.765"></status>
+</kw>
+<kw name="Click Information Tab" library="TopNav">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${INFO_TAB}</arg>
+</arguments>
+<msg timestamp="20170209 23:21:04.460" level="INFO">Clicking element 'xpath=//*[@id="info-tab"]'.</msg>
+<status status="PASS" endtime="20170209 23:21:04.587" starttime="20170209 23:21:04.460"></status>
+</kw>
+<status status="PASS" endtime="20170209 23:21:04.588" starttime="20170209 23:21:04.459"></status>
+</kw>
+<kw name="Verify Page Loaded" library="Info">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Info</arg>
+</arguments>
+<status status="PASS" endtime="20170209 23:21:04.621" starttime="20170209 23:21:04.588"></status>
+</kw>
+<status status="PASS" endtime="20170209 23:21:04.621" starttime="20170209 23:21:04.588"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20170209 23:21:07.625" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20170209 23:21:07.625" starttime="20170209 23:21:04.621"></status>
+</kw>
+<kw name="Click Demo Application Tab" library="TopNav">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${DEMO_TAB}</arg>
+</arguments>
+<msg timestamp="20170209 23:21:07.625" level="INFO">Clicking element 'xpath=//*[@id="demo-tab"]'.</msg>
+<status status="PASS" endtime="20170209 23:21:07.778" starttime="20170209 23:21:07.625"></status>
+</kw>
+<status status="PASS" endtime="20170209 23:21:07.779" starttime="20170209 23:21:07.625"></status>
+</kw>
+<kw name="Verify Page Loaded" library="Demo">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Countdown</arg>
+</arguments>
+<status status="PASS" endtime="20170209 23:21:07.810" starttime="20170209 23:21:07.779"></status>
+</kw>
+<status status="PASS" endtime="20170209 23:21:07.810" starttime="20170209 23:21:07.779"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20170209 23:21:10.815" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20170209 23:21:10.816" starttime="20170209 23:21:07.810"></status>
+</kw>
+<kw name="Click Unit Tests Tab" library="TopNav">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${UNIT_TAB}</arg>
+</arguments>
+<msg timestamp="20170209 23:21:10.819" level="INFO">Clicking element 'xpath=//*[@id="unit-tab"]'.</msg>
+<status status="PASS" endtime="20170209 23:21:11.388" starttime="20170209 23:21:10.818"></status>
+</kw>
+<status status="PASS" endtime="20170209 23:21:11.388" starttime="20170209 23:21:10.817"></status>
+</kw>
+<kw name="Verify Page Loaded" library="UnitTests">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Unit Tests</arg>
+</arguments>
+<status status="PASS" endtime="20170209 23:21:11.417" starttime="20170209 23:21:11.389"></status>
+</kw>
+<status status="PASS" endtime="20170209 23:21:11.417" starttime="20170209 23:21:11.388"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20170209 23:21:14.421" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20170209 23:21:14.422" starttime="20170209 23:21:11.417"></status>
+</kw>
+<kw name="Click Robot Framework Tab" library="TopNav">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${ROBOT_TAB}</arg>
+</arguments>
+<msg timestamp="20170209 23:21:14.425" level="INFO">Clicking element 'xpath=//*[@id="robot-tab"]'.</msg>
+<status status="PASS" endtime="20170209 23:21:15.062" starttime="20170209 23:21:14.424"></status>
+</kw>
+<status status="PASS" endtime="20170209 23:21:15.062" starttime="20170209 23:21:14.423"></status>
+</kw>
+<kw name="Verify Page Loaded" library="RobotTests">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Robot Framework Report</arg>
+</arguments>
+<status status="PASS" endtime="20170209 23:21:15.092" starttime="20170209 23:21:15.063"></status>
+</kw>
+<status status="PASS" endtime="20170209 23:21:15.092" starttime="20170209 23:21:15.063"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20170209 23:21:18.099" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20170209 23:21:18.099" starttime="20170209 23:21:15.092"></status>
+</kw>
+<status status="PASS" endtime="20170209 23:21:18.099" starttime="20170209 23:21:00.765"></status>
+</kw>
+<kw type="teardown" name="End web test" library="Common">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170209 23:21:21.218" starttime="20170209 23:21:18.099"></status>
+</kw>
+<status status="PASS" endtime="20170209 23:21:21.218" starttime="20170209 23:21:18.099"></status>
+</kw>
+<doc>All page tabs work and open the right page</doc>
+<tags>
+<tag>Navigation</tag>
+</tags>
+<status status="PASS" endtime="20170209 23:21:21.218" critical="yes" starttime="20170209 23:20:55.972"></status>
+</test>
+<kw type="teardown" name="Cleanup Testing Data" library="Common">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Cleaning up test data...</arg>
+</arguments>
+<msg timestamp="20170209 23:21:21.218" level="INFO">Cleaning up test data...</msg>
+<status status="PASS" endtime="20170209 23:21:21.218" starttime="20170209 23:21:21.218"></status>
+</kw>
+<status status="PASS" endtime="20170209 23:21:21.218" starttime="20170209 23:21:21.218"></status>
+</kw>
+<doc>Robot Framework tests for the demo web page.</doc>
+<status status="PASS" endtime="20170209 23:21:21.218" starttime="20170209 23:20:55.818"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">Navigation</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Demo" pass="1">Demo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

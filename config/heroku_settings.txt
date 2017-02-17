@@ -1,0 +1,6 @@
+heroku config:set API_KEY=AIzaSyDHAvSBXN6SVrS5_4va3hitvxKJM6r-qJQ
+heroku config:set AUTH_DOMAIN=demopage-todo.firebaseapp.com
+heroku config:set DATABASE_URL=https://demopage-todo.firebaseio.com
+heroku config:set STORAGE_BUCKET=demopage-todo.appspot.com
+heroku config:set MESSAGING_SENDER_ID=1001125008026
+heroku config
