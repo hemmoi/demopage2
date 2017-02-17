@@ -13,9 +13,6 @@ var Navigation = () => {
               <IndexLink id="info-tab" to="/" activeClassName="active-link">Information</IndexLink>
             </li>
             <li>
-              <IndexLink id="demo-tab" to="/countdown" activeClassName="active-link">Demo Application</IndexLink>
-            </li>
-            <li>
               <IndexLink id="todo-tab" to="/todo" activeClassName="active-link">Demo Application</IndexLink>
             </li>
             <li>

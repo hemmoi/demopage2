@@ -5,7 +5,6 @@ var Main = require('Main');
 var Info = require('Info');
 var UnitTests = require('UnitTests');
 var Robot = require('Robot');
-var Countdown = require('Countdown');
 var DemoTodo = require('DemoTodo');
 
 
@@ -19,7 +18,6 @@ require('style!css!sass!applicationStyles')
 ReactDOM.render(
   <Router history={hashHistory}>
     <Route path="/" component={Main}>
-      <Route path="countdown" component={Countdown}/>
       <Route path="todo" component={DemoTodo}/>
       <Route path="unit" component={UnitTests}/>
       <Route path="robot" component={Robot}/>
