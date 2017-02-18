@@ -7,18 +7,34 @@ var Creator = React.createClass({
     return (
       <div>
         <div className="about-me">
-          <h2>Hello from Creator</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac sapien ligula. Aenean at metus a lacus accumsan scelerisque eget sit amet diam. Cras eu rhoncus lectus. Curabitur nec sodales massa. Maecenas maximus turpis massa, a mollis leo maximus sed. Mauris vulputate libero a ex posuere, nec pharetra enim tincidunt. Etiam posuere facilisis aliquet. Sed euismod eleifend turpis, nec vestibulum arcu pharetra vitae. Fusce ut fermentum purus. Cras at nunc sapien. Pellentesque ultrices, dolor vel convallis condimentum, turpis risus volutpat arcu, nec porttitor sem libero sit amet ex. Maecenas mauris orci, molestie venenatis pharetra in, fringilla vitae leo. Vestibulum et lacinia felis, ac interdum mauris. Pellentesque dignissim tortor et ornare cursus.
-
-            Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi in arcu elit. Quisque sollicitudin ipsum non efficitur pharetra. In tristique quam non euismod ornare. Sed in nibh commodo, lacinia nisl eget, interdum nisi. Nulla fringilla eu turpis sed placerat. Integer tempor arcu et consectetur consectetur. Maecenas lobortis dolor non quam mollis, non tempus odio malesuada. Suspendisse vestibulum feugiat ligula, eu lobortis lorem varius vitae. Donec imperdiet lacus quis mi porttitor placerat. Quisque dui orci, blandit at dignissim at, ultrices vel mi. In hac habitasse platea dictumst. Fusce ut tellus condimentum turpis volutpat dignissim. Sed auctor tellus et dolor auctor maximus.
-
-            In pellentesque elit ex, sit amet commodo magna accumsan at. Interdum et malesuada fames ac ante ipsum primis in faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec quis felis placerat diam placerat lacinia. In sapien purus, pulvinar at risus in, sagittis volutpat erat. Maecenas venenatis ultricies dolor maximus consequat. Proin venenatis nisl vitae diam elementum, at aliquam nisl ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a dui enim. Curabitur id erat justo. In vitae eros diam. Sed venenatis sodales lacus, a interdum nulla ornare in.
-
-            Nulla eget fringilla felis, vitae posuere nulla. Sed sollicitudin ornare ligula eget convallis. In consequat lacus nisi, vel dictum lorem venenatis id. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas vel eros enim. Nam ornare vestibulum augue, ac mattis est tempor eget. Suspendisse suscipit semper velit non dictum.
-
-            Ut volutpat ipsum ac velit malesuada hendrerit. Donec vulputate dignissim iaculis. In molestie tortor sodales nisl auctor rhoncus. Aliquam justo sem, imperdiet eu mauris vel, laoreet pulvinar purus. Proin sodales viverra libero eu aliquam. Morbi nunc arcu, sodales vitae lacus eu, semper tincidunt orci. Nulla facilisi. Integer ac velit luctus, varius neque eu, dignissim velit. Mauris tortor elit, accumsan quis auctor eu, maximus eu metus. Morbi lobortis urna in sapien varius rutrum. Ut sollicitudin metus vel ligula volutpat convallis. Cras nibh neque, suscipit sed ex ac, auctor finibus elit. Sed pretium sit amet urna at aliquam. Curabitur sagittis dapibus nisi, sed congue nunc porta eu. Integer tristique lorem sed ipsum tempus, id commodo quam rhoncus. Pellentesque id velit dolor.
-          </p>
+          <h4 className="info-header">Who am I?</h4>
+          <div className="info-body">
+            <p>
+              My name is Kimmo Halonen. I am a graduate engineer, Finn and bald.
+            </p>
+            <p>
+              For 20-years I worked for Nokia and Microsoft, making some of the most legendary mobile phones in the world.
+            </p>
+            <p>
+              My area of speciality was standardization, certification and industry collaboration. Over the years, I wrote standards,
+              test processes and specifications for over a dozen different emerging mobile technologies, and created totally
+              new international certification schemes that are still used today to validate mobile devices.
+            </p>
+            <p>
+              It is impossible to summarize 20-year career in just few words, so I won’t bother.
+              Since you are here, changes are that you have already seen my CV or LinkedIn profile. What is important, is where we go from here.
+            </p>
+            <p>
+              I’m looking for a new career start. Based on my previous experience, I would be best qualified to work in the area of business analysis,
+              quality and test management. However, since I am a strong believer in hands on experience, I would not exclude any exciting possibilities
+              to work in SW/product development.
+              After all, the whole purpose of these pages is to demonstrate that I can do more than just sit in the meetings and write PowerPoints.
+            </p>
+            <p>
+              Here’s also my video CV for your amusement.
+            </p>
+            <iframe className="video-cv" src="https://www.youtube.com/embed/wXM9EoEN5dg" frameborder="0" allowfullscreen></iframe>
+          </div>
         </div>
         <div>
 

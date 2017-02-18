@@ -5,8 +5,8 @@ var About = React.createClass({
   render: function () {
     return (
       <div className="about-pages">
-        <h4>Welcome to my demo page</h4>
-        <div className="pages-summary">
+        <h4 className="info-header">Welcome to my demo page</h4>
+        <div className="info-body">
           <p>
             These are my demo web pages. The plan is not to demonstrate the greatest web application known to human kind,
             although it may come to that at some point. At the moment, I’m still very much a student when it comes to web design.
@@ -21,10 +21,6 @@ var About = React.createClass({
           </p>
 
         </div>
-        <div className="tab-summary">
-
-        </div>
-
       </div>
     )
   }

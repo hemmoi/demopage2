@@ -2,6 +2,8 @@ var React = require('react');
 var { Tab, Tabs, TabList, TabPanel } = require ('react-tabs');
 var About = require('About');
 var Creator = require('Creator');
+var TechList = require('TechList');
+var Contact = require('Contact');
 
 var Info = React.createClass({
 
@@ -17,17 +19,21 @@ var Info = React.createClass({
           <Tabs onSelect={this.handleSelect} selectedIndex={0}>
             <TabList>
               <Tab>About these pages</Tab>
+              <Tab>Demo items</Tab>
               <Tab>About Me</Tab>
-              <Tab>Video CV</Tab>
+              <Tab>Contact info</Tab>
             </TabList>
             <TabPanel>
               <About/>
             </TabPanel>
             <TabPanel>
+              <TechList/>
+            </TabPanel>
+            <TabPanel>
               <Creator/>
             </TabPanel>
             <TabPanel>
-              <iframe className="video-cv" src="https://www.youtube.com/embed/wXM9EoEN5dg" frameborder="0" allowfullscreen></iframe>
+              <Contact/>
             </TabPanel>
           </Tabs>
         </div>
