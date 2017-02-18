@@ -21,10 +21,14 @@ export class Contact extends React.Component {
                 <a href="mailto:hemmoi@gmail.com">hemmoi@gmail.com</a>
               </p>
             </div>
-            {/* <div className="linkedin-plugin">
-              <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-              <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/kimmokhalonen" data-format="inline" data-related="false"></script>
-            </div> */}
+            <div className="linkedin-image">
+              <p>
+                <a href="https://www.linkedin.com/in/kimmokhalonen/" target="_blank">
+                  <img style={{width: 30, marginBottom: 5}} src={require('../images/linkedin-logo.jpg')}  alt="LinkedIn image" />
+                  Kimmo Halonen
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </div>

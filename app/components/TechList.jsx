@@ -11,7 +11,7 @@ export class TechList extends React.Component {
             <tbody>
               <tr>
                 <td>AWS</td>
-                <td>AWS/S3 is used to store automated Unit and Robot Framework test reports.</td>
+                <td>AWS / S3 is used to store automated Unit and Robot Framework test reports.</td>
               </tr>
               <tr>
                 <td>Firebase</td>
