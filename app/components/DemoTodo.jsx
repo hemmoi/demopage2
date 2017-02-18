@@ -10,9 +10,9 @@ var TodoAPI = require('TodoAPI');
 
 store.dispatch(actions.startAddTodos());
 
-var DemoTodo = React.createClass({
+export class DemoTodo extends React.Component {
 
-  render: function () {
+  render () {
 
     return (
       <Provider store={store}>
@@ -20,6 +20,6 @@ var DemoTodo = React.createClass({
       </Provider>
     )
   }
-});
+};
 
 module.exports = DemoTodo;

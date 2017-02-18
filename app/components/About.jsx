@@ -1,8 +1,10 @@
 var React = require('react');
 
-var About = React.createClass({
 
-  render: function () {
+
+export class About extends React.Component {
+
+  render () {
     return (
       <div className="about-pages">
         <h4 className="info-header">Welcome to my demo page</h4>
@@ -13,7 +15,7 @@ var About = React.createClass({
           </p>
           <p>
             The purpose of these pages is to act as a playground and utilize as many web technologies, tools and processes as possible.
-            So, the things demonstrated here also include items related to e.g. DevOps and test automation.
+            So, the things demonstrated here also include things related to e.g. DevOps and test automation.
           </p>
           <p>
             I will be adding more stuff and upgrading these pages continuously as I learn new things. This is only the first release,
@@ -24,6 +26,6 @@ var About = React.createClass({
       </div>
     )
   }
-});
+};
 
 module.exports = About;

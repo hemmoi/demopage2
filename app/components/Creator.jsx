@@ -1,9 +1,9 @@
 var React = require('react');
 var Iframe = require("react-iframe");
 
-var Creator = React.createClass({
+export class Creator extends React.Component {
 
-  render: function () {
+  render () {
     return (
       <div>
         <div className="about-me">
@@ -13,7 +13,7 @@ var Creator = React.createClass({
               My name is Kimmo Halonen. I am a graduate engineer, Finn and bald.
             </p>
             <p>
-              For 20-years I worked for Nokia and Microsoft, making some of the most legendary mobile phones in the world.
+              For 20-years I worked for Nokia and Microsoft, creating some of the most legendary mobile devices in the world.
             </p>
             <p>
               My area of speciality was standardization, certification and industry collaboration. Over the years, I wrote standards,
@@ -22,7 +22,7 @@ var Creator = React.createClass({
             </p>
             <p>
               It is impossible to summarize 20-year career in just few words, so I won’t bother.
-              Since you are here, changes are that you have already seen my CV or LinkedIn profile. What is important, is where we go from here.
+              Since you are here, changes are that you have already seen my CV or LinkedIn profile. What's important, is where do we go from here.
             </p>
             <p>
               I’m looking for a new career start. Based on my previous experience, I would be best qualified to work in the area of business analysis,
@@ -33,7 +33,7 @@ var Creator = React.createClass({
             <p>
               Here’s also my video CV for your amusement.
             </p>
-            <iframe className="video-cv" src="https://www.youtube.com/embed/wXM9EoEN5dg" frameborder="0" allowfullscreen></iframe>
+            <iframe className="video-cv" src="https://www.youtube.com/embed/wXM9EoEN5dg" frameBorder="0" allowFullScreen></iframe>
           </div>
         </div>
         <div>
@@ -42,6 +42,6 @@ var Creator = React.createClass({
       </div>
     )
   }
-});
+};
 
 module.exports = Creator;

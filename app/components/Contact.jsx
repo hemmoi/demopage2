@@ -1,8 +1,8 @@
 var React = require('react');
 
-var Contact = React.createClass({
+export class Contact extends React.Component {
 
-  render: function () {
+  render () {
     return (
       <div>
         <div className="about-me">
@@ -21,14 +21,15 @@ var Contact = React.createClass({
                 <a href="mailto:hemmoi@gmail.com">hemmoi@gmail.com</a>
               </p>
             </div>
+            {/* <div className="linkedin-plugin">
+              <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+              <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/kimmokhalonen" data-format="inline" data-related="false"></script>
+            </div> */}
           </div>
-        </div>
-        <div>
-
         </div>
       </div>
     )
   }
-});
+};
 
 module.exports = Contact;

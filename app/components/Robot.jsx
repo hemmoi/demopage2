@@ -1,16 +1,17 @@
 var React = require('react');
 var Iframe = require("react-iframe");
-var Robot = React.createClass({
 
-  render: function () {
 
+export class Robot extends React.Component {
+
+  render () {
     return (
       <div className="report">
-          <h3 className="page-title">Robot Framework Report</h3>
+          <h1 className="robot-header1">Robot Framework Tests</h1>
           <Iframe url="https://s3.eu-west-2.amazonaws.com/demoreports/report.html"/>
       </div>
     )
   }
-});
+};
 
 module.exports = Robot;

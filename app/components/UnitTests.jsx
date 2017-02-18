@@ -3,9 +3,9 @@ var Iframe = require("react-iframe");
 
 {/* <Iframe url="http://www.example.com" [string width, [string height]] /> */}
 
-var UnitTests = React.createClass({
+export class UnitTests extends React.Component {
 
-  render: function () {
+  render () {
 
     return (
         <div className="report">
@@ -13,6 +13,6 @@ var UnitTests = React.createClass({
         </div>
     )
   }
-});
+};
 
 module.exports = UnitTests;

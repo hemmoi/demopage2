@@ -5,13 +5,13 @@ var Creator = require('Creator');
 var TechList = require('TechList');
 var Contact = require('Contact');
 
-var Info = React.createClass({
+export class Info extends React.Component {
 
   handleSelect(index, last) {
       console.log('Selected tab: ' + index + ', Last tab: ' + last);
-    },
+    }
 
-  render: function () {
+  render () {
     return (
       <div className="info-page">
 
@@ -45,6 +45,6 @@ var Info = React.createClass({
       </div>
     )
   }
-});
+};
 
 module.exports = Info;
