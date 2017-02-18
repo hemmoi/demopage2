@@ -33,7 +33,7 @@ var Info = React.createClass({
         </div>
 
         <div className="image-pane">
-          <img src="http://www.trbimg.com/img-573a089a/turbine/ct-homer-simpson-live-pizza-debate-met-0517-20160516"  alt="Picture of Kimmo Halonen"/>
+          <img src={require('../images/Homer_Simpson_2006.png')}  alt="Picture of Kimmo Halonen"/>
         </div>
 
       </div>

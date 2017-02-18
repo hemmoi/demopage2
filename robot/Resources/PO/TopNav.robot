@@ -4,7 +4,7 @@ Library  Selenium2Library
 
 *** Variables ***
 ${INFO_TAB} =   xpath=//*[@id="info-tab"]
-${DEMO_TAB} =   xpath=//*[@id="demo-tab"]
+${DEMO_TAB} =   xpath=//*[@id="todo-tab"]
 ${UNIT_TAB} =   xpath=//*[@id="unit-tab"]
 ${ROBOT_TAB} =  xpath=//*[@id="robot-tab"]
 

@@ -57,7 +57,7 @@ module.exports = {
       reducers: 'app/reducers/reducers.jsx',
       configureStore: 'app/store/configureStore.jsx'
     },
-    extensions: ['', '.js', '.jsx']
+    extensions: ['', '.js', '.jsx', '.png', '.jpg']
   },
   module: {
     loaders: [
@@ -68,6 +68,11 @@ module.exports = {
         },
         test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/
+      },
+      {
+        test: /\.(gif|jpe?g|png|svg)$/,
+        loader: 'url-loader',
+        query: { name: '[name].[ext]' }
       }
     ]
   },
