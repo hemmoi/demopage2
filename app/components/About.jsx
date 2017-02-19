@@ -15,10 +15,10 @@ export class About extends React.Component {
           </p>
           <p>
             The purpose of these pages is to act as a playground and utilize as many web technologies, tools and processes as possible.
-            So, the things demonstrated here also include things related to e.g. DevOps and test automation.
+            So, the things demonstrated here also include stuff related to e.g. DevOps and test automation.
           </p>
           <p>
-            I will be adding more stuff and upgrading these pages continuously as I learn new things. This is only the first release,
+            I will be adding more material and upgrading these pages continuously as I learn new things. This is only the first release,
             so be sure to visit these pages frequently to see what kind of new and exciting things have been added.
           </p>
 

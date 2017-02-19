@@ -15,11 +15,15 @@ export class Info extends React.Component {
     return (
       <div className="info-page">
 
+        <div className="image-pane">
+          <img src={require('../images/demopage-self3.png')} style={{height: 600}} alt="Picture of Kimmo Halonen"/>
+        </div>
+
         <div className="info-pane">
           <Tabs onSelect={this.handleSelect} selectedIndex={0}>
             <TabList>
               <Tab>About these pages</Tab>
-              <Tab>Demo items</Tab>
+              <Tab>Demo info</Tab>
               <Tab>About Me</Tab>
               <Tab>Contact info</Tab>
             </TabList>
@@ -37,11 +41,6 @@ export class Info extends React.Component {
             </TabPanel>
           </Tabs>
         </div>
-
-        <div className="image-pane">
-          <img src={require('../images/Homer_Simpson_2006.png')}  alt="Picture of Kimmo Halonen"/>
-        </div>
-
       </div>
     )
   }
