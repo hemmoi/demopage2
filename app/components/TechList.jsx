@@ -27,7 +27,9 @@ export class TechList extends React.Component {
               </tr>
               <tr>
                <td>GitHub</td>
-               <td>GitHub is used as a remote storage for the project files.</td>
+               <td>GitHub is used as a remote storage for the project
+                 <a href="https://github.com/hemmoi/demopage2" target="_blank"> files.</a>
+               </td>
               </tr>
               <tr>
                <td>Heroku</td>
