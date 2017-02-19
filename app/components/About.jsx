@@ -10,7 +10,7 @@ export class About extends React.Component {
         <h4 className="info-header">Welcome to my demo page</h4>
         <div className="info-body">
           <p>
-            These are my demo web pages. The plan is not to demonstrate the greatest web application known to human kind,
+            These are my demo web pages. The plan is not to demonstrate the greatest web application known to humankind,
             although it may come to that at some point. At the moment, I’m still very much a student when it comes to web design.
           </p>
           <p>
