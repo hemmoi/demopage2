@@ -16,7 +16,7 @@ export class Info extends React.Component {
       <div className="info-page">
 
         <div className="image-pane">
-          <img src={require('../images/demopage-self3.png')} style={{height: 600}} alt="Picture of Kimmo Halonen"/>
+          <img src={require('../images/demopage-self4.png')} style={{height: 600}} alt="Picture of Kimmo Halonen"/>
         </div>
 
         <div className="info-pane">
