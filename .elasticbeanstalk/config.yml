@@ -1,0 +1,20 @@
+branch-defaults:
+  master:
+    environment: LowCost-env
+    group_suffix: null
+environment-defaults:
+  LowCost-env:
+    branch: null
+    repository: null
+  dev-env:
+    branch: null
+    repository: null
+global:
+  application_name: demopage
+  branch: null
+  default_ec2_keyname: null
+  default_platform: Node.js
+  default_region: us-west-2
+  profile: eb-cli
+  repository: null
+  sc: git
