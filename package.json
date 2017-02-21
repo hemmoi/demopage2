@@ -1,13 +1,13 @@
 {
-  "name": "boilerplate",
+  "name": "demopage",
   "version": "1.0.0",
-  "description": "Simple react app",
+  "description": "Homepage for demo purposes",
   "main": "index.js",
   "scripts": {
     "test": "karma start",
     "start": "node server.js"
   },
-  "author": "Andrew Mead",
+  "author": "Kimmo Halonen",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.9.1",

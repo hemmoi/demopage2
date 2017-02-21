@@ -1,1 +1,1 @@
-Boilerplate React App
+Homepage for demo purposes.
