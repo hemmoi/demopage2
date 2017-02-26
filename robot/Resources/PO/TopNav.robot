@@ -10,14 +10,14 @@ ${ROBOT_TAB} =  xpath=//*[@id="robot-tab"]
 
 *** Keywords ***
 
-Click Information Tab
+Click "Information" Tab
     Click Element  ${INFO_TAB}
 
-Click Demo Application Tab
+Click "Demo Application" Tab
     Click Element  ${DEMO_TAB}
 
-Click Unit Tests Tab
+Click "Unit Tests" Tab
     Click Element  ${UNIT_TAB}
 
-Click Robot Framework Tab
+Click "Robot Framework" Tab
     Click Element  ${ROBOT_TAB}

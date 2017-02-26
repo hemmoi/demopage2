@@ -6,4 +6,4 @@ Library  Selenium2Library
 *** Keywords ***
 
 Verify Page Loaded
-    Wait Until Page Contains  Robot Framework Report
+    Wait Until Page Contains  Robot Framework Tests

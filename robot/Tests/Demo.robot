@@ -1,14 +1,14 @@
 *** Settings ***
-Documentation  Robot Framework tests for the demo web page.
-Resource  ../Resources/DemopageApp.robot
-Resource  ../Resources/Common.robot
-Suite Setup  Insert Testing Data
-Test Setup  Begin web test
-Test Teardown  End web test
-Suite Teardown  Cleanup Testing Data
+Documentation   Robot Framework tests for the demo web page.
 
-# Copy/paste the line below into Terminal to execute:
-# pybot -d results tests/amazon.robot
+Resource        ../Resources/DemopageApp.robot
+Resource        ../Resources/Common.robot
+
+Suite Setup     Begin web test
+Test Setup      NONE
+Test Teardown   NONE
+Suite Teardown  End web test
+
 
 *** Variables ***
 ${BROWSER} =  chrome
@@ -18,10 +18,13 @@ ${INPUT_TIME} =  10
 
 *** Test Cases ***
 
-User can browse all page tabs
-    [Documentation]  All page tabs work and open the right page
+User can browse all top navigation tabs
+    [Documentation]  All top navigation tabs work and open the right page
     [Tags]  Navigation
-    DemoPageApp.Browse all tabs
+    DemoPageApp.Browse all top navigation tabs
 
 
-
+User can browse all tabs on the "Information" page
+    [Documentation]  All "Information" page tabs work and open the right page
+    [Tags]  Navigation
+    DemoPageApp.Browse all tabs on the "Information" page
