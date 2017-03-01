@@ -6,6 +6,10 @@ Library  Selenium2Library
 Verify Page Loaded
     Wait Until Page Contains  Todo
 
+Add Text to "Search todos" field
+    [Arguments]                             ${todo}
+    Input Text                              //*[@id="app"]/div/div[2]/div/div/div/div/div[1]/div[1]/input                 ${todo}
+
 Add Todo
     [Arguments]                             ${todo}
     Input Text                              xpath=//*[@id="app"]/div/div[2]/div/div/div/div/div[3]/form/input             ${todo}
@@ -15,12 +19,11 @@ Click Existing Todo item
     [Arguments]                             ${todo}
     Click Element                           xpath=//*[contains(text(), '${todo}')]
 
-Click "Show completed todos" check box
+Select "Show completed todos" check box
     Select Checkbox                         xpath=//*[@id="app"]/div/div[2]/div/div/div/div/div[1]/div[2]/label/input
 
-Add Text to "Search todos" field
-    [Arguments]                             ${todo}
-    Input Text                              //*[@id="app"]/div/div[2]/div/div/div/div/div[1]/div[1]/input                 ${todo}
+Unselect "Show completed todos" check box
+    Unselect Checkbox                       xpath=//*[@id="app"]/div/div[2]/div/div/div/div/div[1]/div[2]/label/input
 
 Verify ToDo Item Can Be Seen
     [Arguments]                             ${todo}

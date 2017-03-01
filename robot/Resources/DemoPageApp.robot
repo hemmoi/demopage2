@@ -6,9 +6,6 @@ Resource  ../Resources/PO/RobotTests.robot
 Resource  ../Resources/PO/TopNav.robot
 Resource  ../Resources/PO/UnitTests.robot
 
-*** Variables ***
-${TODO ITEM1}          Todo item 1qaz2wsx
-${TODO ITEM2}          Todo item 3edc4rfv
 
 *** Keywords ***
 
@@ -45,24 +42,40 @@ Browse all tabs on the "Information" page
     Info.Verify "About these pages" Page Loaded
 
 Add new ToDo item
-
+    [Arguments]                                     ${todo}
     TopNav.Click "Demo Application" Tab
     Demo.Verify Page Loaded
 
-    Add Todo                                        ${TODO ITEM1}
-    Verify ToDo Item Can Be Seen                    ${TODO ITEM1}
+    Add Todo                                        ${todo}
+    Verify ToDo Item Can Be Seen                    ${todo}
 
 Complete ToDo item
+    [Arguments]                                     ${todo}
+    DemoPageApp.Add new ToDo item                   ${todo}
 
-    Click Existing Todo item                        ${TODO ITEM1}
-    Verify ToDo Item Can Not Be Seen                ${TODO ITEM1}
+    Click Existing Todo item                        ${todo}
+    Verify ToDo Item Can Not Be Seen                ${todo}
+
+Re-activate Completed ToDo
+    [Arguments]                                     ${todo}
+    DemoPageApp.Complete ToDo item                  ${todo}
+    Demo.Select "Show completed todos" check box
+    Click Existing Todo item                        ${todo}
+    Verify ToDo Item Can Be Seen                    ${todo}
+    Demo.Unselect "Show completed todos" check box
 
 Show Completed ToDos
-    Demo.Click "Show completed todos" check box
-    Verify ToDo Item Can Be Seen                    ${TODO ITEM1}
+    [Arguments]                                     ${todo}
+    DemoPageApp.Complete ToDo item                  ${todo}
+
+    Demo.Select "Show completed todos" check box
+    Verify ToDo Item Can Be Seen                    ${todo}
+    Demo.Unselect "Show completed todos" check box
 
 Search ToDos
-    Add Todo                                        ${TODO ITEM2}
-    Demo.Add Text to "Search todos" field           ${TODO ITEM1}
-    Verify ToDo Item Can Be Seen                    ${TODO ITEM1}
-    Verify ToDo Item Can Not Be Seen                ${TODO ITEM2}
+    [Arguments]                                     ${todo1}                    ${todo2}
+    Add Todo                                        ${todo1}
+    Add Todo                                        ${todo2}
+    Demo.Add Text to "Search todos" field           ${todo1}
+    Verify ToDo Item Can Be Seen                    ${todo1}
+    Verify ToDo Item Can Not Be Seen                ${todo2}
