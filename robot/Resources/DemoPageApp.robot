@@ -6,6 +6,10 @@ Resource  ../Resources/PO/RobotTests.robot
 Resource  ../Resources/PO/TopNav.robot
 Resource  ../Resources/PO/UnitTests.robot
 
+*** Variables ***
+${TODO ITEM1}          Todo item 1qaz2wsx
+${TODO ITEM2}          Todo item 3edc4rfv
+
 *** Keywords ***
 
 Browse all top navigation tabs
@@ -39,3 +43,26 @@ Browse all tabs on the "Information" page
 
     InfoPageNav.Click "About these pages" Tab
     Info.Verify "About these pages" Page Loaded
+
+Add new ToDo item
+
+    TopNav.Click "Demo Application" Tab
+    Demo.Verify Page Loaded
+
+    Add Todo                                        ${TODO ITEM1}
+    Verify ToDo Item Can Be Seen                    ${TODO ITEM1}
+
+Complete ToDo item
+
+    Click Existing Todo item                        ${TODO ITEM1}
+    Verify ToDo Item Can Not Be Seen                ${TODO ITEM1}
+
+Show Completed ToDos
+    Demo.Click "Show completed todos" check box
+    Verify ToDo Item Can Be Seen                    ${TODO ITEM1}
+
+Search ToDos
+    Add Todo                                        ${TODO ITEM2}
+    Demo.Add Text to "Search todos" field           ${TODO ITEM1}
+    Verify ToDo Item Can Be Seen                    ${TODO ITEM1}
+    Verify ToDo Item Can Not Be Seen                ${TODO ITEM2}

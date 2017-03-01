@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20170225 23:15:01.187" generator="Robot 3.0.1 (Python 2.7.13 on win32)">
+<robot generated="20170301 22:09:49.243" generator="Robot 3.0.1 (Python 2.7.13 on win32)">
 <suite source="C:\Users\hemmoi\react\Demopage2\robot\Tests\Demo.robot" id="s1" name="Demo">
 <kw type="setup" name="Begin web test" library="Common">
 <kw name="Log" library="BuiltIn">
@@ -7,8 +7,8 @@
 <arguments>
 <arg>Setting up test suite...</arg>
 </arguments>
-<msg timestamp="20170225 23:15:01.581" level="INFO">Setting up test suite...</msg>
-<status status="PASS" endtime="20170225 23:15:01.581" starttime="20170225 23:15:01.581"></status>
+<msg timestamp="20170301 22:09:49.428" level="INFO">Setting up test suite...</msg>
+<status status="PASS" endtime="20170301 22:09:49.428" starttime="20170301 22:09:49.428"></status>
 </kw>
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to given URL.</doc>
@@ -16,14 +16,14 @@
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20170225 23:15:01.582" level="INFO">Opening browser 'chrome' to base url 'about:blank'</msg>
-<status status="PASS" endtime="20170225 23:15:05.972" starttime="20170225 23:15:01.582"></status>
+<msg timestamp="20170301 22:09:49.429" level="INFO">Opening browser 'chrome' to base url 'about:blank'</msg>
+<status status="PASS" endtime="20170301 22:09:53.048" starttime="20170301 22:09:49.428"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20170225 23:15:07.208" starttime="20170225 23:15:05.972"></status>
+<status status="PASS" endtime="20170301 22:09:54.253" starttime="20170301 22:09:53.048"></status>
 </kw>
-<status status="PASS" endtime="20170225 23:15:07.208" starttime="20170225 23:15:01.580"></status>
+<status status="PASS" endtime="20170301 22:09:54.254" starttime="20170301 22:09:49.427"></status>
 </kw>
 <test id="s1-t1" name="User can browse all top navigation tabs">
 <kw name="Browse all top navigation tabs" library="DemopageApp">
@@ -33,10 +33,10 @@
 <arguments>
 <arg>${START_URL}</arg>
 </arguments>
-<msg timestamp="20170225 23:15:07.208" level="INFO">Opening url 'localhost:3000'</msg>
-<status status="PASS" endtime="20170225 23:15:09.347" starttime="20170225 23:15:07.208"></status>
+<msg timestamp="20170301 22:09:54.262" level="INFO">Opening url 'localhost:3000'</msg>
+<status status="PASS" endtime="20170301 22:09:55.395" starttime="20170301 22:09:54.262"></status>
 </kw>
-<status status="PASS" endtime="20170225 23:15:09.347" starttime="20170225 23:15:07.208"></status>
+<status status="PASS" endtime="20170301 22:09:55.395" starttime="20170301 22:09:54.260"></status>
 </kw>
 <kw name="Click &quot;Demo Application&quot; Tab" library="TopNav">
 <kw name="Click Element" library="Selenium2Library">
@@ -44,10 +44,10 @@
 <arguments>
 <arg>${DEMO_TAB}</arg>
 </arguments>
-<msg timestamp="20170225 23:15:09.351" level="INFO">Clicking element 'xpath=//*[@id="todo-tab"]'.</msg>
-<status status="PASS" endtime="20170225 23:15:09.655" starttime="20170225 23:15:09.347"></status>
+<msg timestamp="20170301 22:09:55.397" level="INFO">Clicking element 'xpath=//*[@id="todo-tab"]'.</msg>
+<status status="PASS" endtime="20170301 22:09:55.550" starttime="20170301 22:09:55.397"></status>
 </kw>
-<status status="PASS" endtime="20170225 23:15:09.655" starttime="20170225 23:15:09.347"></status>
+<status status="PASS" endtime="20170301 22:09:55.551" starttime="20170301 22:09:55.396"></status>
 </kw>
 <kw name="Verify Page Loaded" library="Demo">
 <kw name="Wait Until Page Contains" library="Selenium2Library">
@@ -55,9 +55,9 @@
 <arguments>
 <arg>Todo</arg>
 </arguments>
-<status status="PASS" endtime="20170225 23:15:09.748" starttime="20170225 23:15:09.655"></status>
+<status status="PASS" endtime="20170301 22:09:55.600" starttime="20170301 22:09:55.552"></status>
 </kw>
-<status status="PASS" endtime="20170225 23:15:09.748" starttime="20170225 23:15:09.655"></status>
+<status status="PASS" endtime="20170301 22:09:55.600" starttime="20170301 22:09:55.551"></status>
 </kw>
 <kw name="Click &quot;Unit Tests&quot; Tab" library="TopNav">
 <kw name="Click Element" library="Selenium2Library">
@@ -65,10 +65,10 @@
 <arguments>
 <arg>${UNIT_TAB}</arg>
 </arguments>
-<msg timestamp="20170225 23:15:09.752" level="INFO">Clicking element 'xpath=//*[@id="unit-tab"]'.</msg>
-<status status="PASS" endtime="20170225 23:15:10.430" starttime="20170225 23:15:09.748"></status>
+<msg timestamp="20170301 22:09:55.601" level="INFO">Clicking element 'xpath=//*[@id="unit-tab"]'.</msg>
+<status status="PASS" endtime="20170301 22:09:56.094" starttime="20170301 22:09:55.601"></status>
 </kw>
-<status status="PASS" endtime="20170225 23:15:10.430" starttime="20170225 23:15:09.748"></status>
+<status status="PASS" endtime="20170301 22:09:56.095" starttime="20170301 22:09:55.600"></status>
 </kw>
 <kw name="Verify Page Loaded" library="UnitTests">
 <kw name="Wait Until Page Contains" library="Selenium2Library">
@@ -76,9 +76,9 @@
 <arguments>
 <arg>Unit Tests</arg>
 </arguments>
-<status status="PASS" endtime="20170225 23:15:10.482" starttime="20170225 23:15:10.430"></status>
+<status status="PASS" endtime="20170301 22:09:56.133" starttime="20170301 22:09:56.095"></status>
 </kw>
-<status status="PASS" endtime="20170225 23:15:10.486" starttime="20170225 23:15:10.430"></status>
+<status status="PASS" endtime="20170301 22:09:56.133" starttime="20170301 22:09:56.095"></status>
 </kw>
 <kw name="Click &quot;Robot Framework&quot; Tab" library="TopNav">
 <kw name="Click Element" library="Selenium2Library">
@@ -86,10 +86,10 @@
 <arguments>
 <arg>${ROBOT_TAB}</arg>
 </arguments>
-<msg timestamp="20170225 23:15:10.486" level="INFO">Clicking element 'xpath=//*[@id="robot-tab"]'.</msg>
-<status status="PASS" endtime="20170225 23:15:11.385" starttime="20170225 23:15:10.486"></status>
+<msg timestamp="20170301 22:09:56.134" level="INFO">Clicking element 'xpath=//*[@id="robot-tab"]'.</msg>
+<status status="PASS" endtime="20170301 22:09:56.814" starttime="20170301 22:09:56.134"></status>
 </kw>
-<status status="PASS" endtime="20170225 23:15:11.385" starttime="20170225 23:15:10.486"></status>
+<status status="PASS" endtime="20170301 22:09:56.814" starttime="20170301 22:09:56.133"></status>
 </kw>
 <kw name="Verify Page Loaded" library="RobotTests">
 <kw name="Wait Until Page Contains" library="Selenium2Library">
@@ -97,9 +97,9 @@
 <arguments>
 <arg>Robot Framework Tests</arg>
 </arguments>
-<status status="PASS" endtime="20170225 23:15:11.438" starttime="20170225 23:15:11.387"></status>
+<status status="PASS" endtime="20170301 22:09:56.857" starttime="20170301 22:09:56.815"></status>
 </kw>
-<status status="PASS" endtime="20170225 23:15:11.438" starttime="20170225 23:15:11.386"></status>
+<status status="PASS" endtime="20170301 22:09:56.857" starttime="20170301 22:09:56.814"></status>
 </kw>
 <kw name="Click &quot;Information&quot; Tab" library="TopNav">
 <kw name="Click Element" library="Selenium2Library">
@@ -107,10 +107,10 @@
 <arguments>
 <arg>${INFO_TAB}</arg>
 </arguments>
-<msg timestamp="20170225 23:15:11.442" level="INFO">Clicking element 'xpath=//*[@id="info-tab"]'.</msg>
-<status status="PASS" endtime="20170225 23:15:11.742" starttime="20170225 23:15:11.438"></status>
+<msg timestamp="20170301 22:09:56.858" level="INFO">Clicking element 'xpath=//*[@id="info-tab"]'.</msg>
+<status status="PASS" endtime="20170301 22:09:57.016" starttime="20170301 22:09:56.858"></status>
 </kw>
-<status status="PASS" endtime="20170225 23:15:11.742" starttime="20170225 23:15:11.438"></status>
+<status status="PASS" endtime="20170301 22:09:57.016" starttime="20170301 22:09:56.858"></status>
 </kw>
 <kw name="Verify &quot;About these pages&quot; Page Loaded" library="Info">
 <kw name="Wait Until Page Contains" library="Selenium2Library">
@@ -118,17 +118,17 @@
 <arguments>
 <arg>Welcome</arg>
 </arguments>
-<status status="PASS" endtime="20170225 23:15:11.798" starttime="20170225 23:15:11.742"></status>
+<status status="PASS" endtime="20170301 22:09:57.061" starttime="20170301 22:09:57.016"></status>
 </kw>
-<status status="PASS" endtime="20170225 23:15:11.798" starttime="20170225 23:15:11.742"></status>
+<status status="PASS" endtime="20170301 22:09:57.061" starttime="20170301 22:09:57.016"></status>
 </kw>
-<status status="PASS" endtime="20170225 23:15:11.798" starttime="20170225 23:15:07.208"></status>
+<status status="PASS" endtime="20170301 22:09:57.061" starttime="20170301 22:09:54.259"></status>
 </kw>
 <doc>All top navigation tabs work and open the right page</doc>
 <tags>
 <tag>Navigation</tag>
 </tags>
-<status status="PASS" endtime="20170225 23:15:11.802" critical="yes" starttime="20170225 23:15:07.208"></status>
+<status status="PASS" endtime="20170301 22:09:57.062" critical="yes" starttime="20170301 22:09:54.255"></status>
 </test>
 <test id="s1-t2" name="User can browse all tabs on the &quot;Information&quot; page">
 <kw name="Browse all tabs on the &quot;Information&quot; page" library="DemopageApp">
@@ -138,10 +138,10 @@
 <arguments>
 <arg>${START_URL}</arg>
 </arguments>
-<msg timestamp="20170225 23:15:11.814" level="INFO">Opening url 'localhost:3000'</msg>
-<status status="PASS" endtime="20170225 23:15:12.826" starttime="20170225 23:15:11.814"></status>
+<msg timestamp="20170301 22:09:57.067" level="INFO">Opening url 'localhost:3000'</msg>
+<status status="PASS" endtime="20170301 22:09:57.587" starttime="20170301 22:09:57.067"></status>
 </kw>
-<status status="PASS" endtime="20170225 23:15:12.830" starttime="20170225 23:15:11.814"></status>
+<status status="PASS" endtime="20170301 22:09:57.587" starttime="20170301 22:09:57.066"></status>
 </kw>
 <kw name="Click &quot;Demo info&quot; Tab" library="InfoPageNav">
 <kw name="Click Element" library="Selenium2Library">
@@ -149,10 +149,10 @@
 <arguments>
 <arg>${DEMO_INFO_TAB}</arg>
 </arguments>
-<msg timestamp="20170225 23:15:12.830" level="INFO">Clicking element 'css=#react-tabs-2'.</msg>
-<status status="PASS" endtime="20170225 23:15:13.072" starttime="20170225 23:15:12.830"></status>
+<msg timestamp="20170301 22:09:57.588" level="INFO">Clicking element 'css=#react-tabs-2'.</msg>
+<status status="PASS" endtime="20170301 22:09:57.713" starttime="20170301 22:09:57.588"></status>
 </kw>
-<status status="PASS" endtime="20170225 23:15:13.072" starttime="20170225 23:15:12.830"></status>
+<status status="PASS" endtime="20170301 22:09:57.713" starttime="20170301 22:09:57.587"></status>
 </kw>
 <kw name="Verify &quot;Demo info&quot; Page Loaded" library="Info">
 <kw name="Wait Until Page Contains" library="Selenium2Library">
@@ -160,9 +160,9 @@
 <arguments>
 <arg>Used technologies</arg>
 </arguments>
-<status status="PASS" endtime="20170225 23:15:13.131" starttime="20170225 23:15:13.072"></status>
+<status status="PASS" endtime="20170301 22:09:57.743" starttime="20170301 22:09:57.714"></status>
 </kw>
-<status status="PASS" endtime="20170225 23:15:13.131" starttime="20170225 23:15:13.072"></status>
+<status status="PASS" endtime="20170301 22:09:57.743" starttime="20170301 22:09:57.713"></status>
 </kw>
 <kw name="Click &quot;About Me&quot; Tab" library="InfoPageNav">
 <kw name="Click Element" library="Selenium2Library">
@@ -170,10 +170,10 @@
 <arguments>
 <arg>${ABOUT_ME_TAB}</arg>
 </arguments>
-<msg timestamp="20170225 23:15:13.135" level="INFO">Clicking element 'css=#react-tabs-4'.</msg>
-<status status="PASS" endtime="20170225 23:15:14.558" starttime="20170225 23:15:13.135"></status>
+<msg timestamp="20170301 22:09:57.744" level="INFO">Clicking element 'css=#react-tabs-4'.</msg>
+<status status="PASS" endtime="20170301 22:09:58.702" starttime="20170301 22:09:57.744"></status>
 </kw>
-<status status="PASS" endtime="20170225 23:15:14.558" starttime="20170225 23:15:13.135"></status>
+<status status="PASS" endtime="20170301 22:09:58.702" starttime="20170301 22:09:57.743"></status>
 </kw>
 <kw name="Verify &quot;About Me&quot; Page Loaded" library="Info">
 <kw name="Wait Until Page Contains" library="Selenium2Library">
@@ -181,9 +181,9 @@
 <arguments>
 <arg>Who am I</arg>
 </arguments>
-<status status="PASS" endtime="20170225 23:15:14.622" starttime="20170225 23:15:14.558"></status>
+<status status="PASS" endtime="20170301 22:09:58.731" starttime="20170301 22:09:58.703"></status>
 </kw>
-<status status="PASS" endtime="20170225 23:15:14.622" starttime="20170225 23:15:14.558"></status>
+<status status="PASS" endtime="20170301 22:09:58.732" starttime="20170301 22:09:58.702"></status>
 </kw>
 <kw name="Click &quot;Contact info&quot; Tab" library="InfoPageNav">
 <kw name="Click Element" library="Selenium2Library">
@@ -191,10 +191,10 @@
 <arguments>
 <arg>${CONTACT_INFO_TAB}</arg>
 </arguments>
-<msg timestamp="20170225 23:15:14.622" level="INFO">Clicking element 'css=#react-tabs-6'.</msg>
-<status status="PASS" endtime="20170225 23:15:14.867" starttime="20170225 23:15:14.622"></status>
+<msg timestamp="20170301 22:09:58.733" level="INFO">Clicking element 'css=#react-tabs-6'.</msg>
+<status status="PASS" endtime="20170301 22:09:58.854" starttime="20170301 22:09:58.732"></status>
 </kw>
-<status status="PASS" endtime="20170225 23:15:14.867" starttime="20170225 23:15:14.622"></status>
+<status status="PASS" endtime="20170301 22:09:58.855" starttime="20170301 22:09:58.732"></status>
 </kw>
 <kw name="Verify &quot;Contact info&quot; Page Loaded" library="Info">
 <kw name="Wait Until Page Contains" library="Selenium2Library">
@@ -202,9 +202,9 @@
 <arguments>
 <arg>Contact information</arg>
 </arguments>
-<status status="PASS" endtime="20170225 23:15:14.919" starttime="20170225 23:15:14.867"></status>
+<status status="PASS" endtime="20170301 22:09:58.884" starttime="20170301 22:09:58.855"></status>
 </kw>
-<status status="PASS" endtime="20170225 23:15:14.923" starttime="20170225 23:15:14.867"></status>
+<status status="PASS" endtime="20170301 22:09:58.884" starttime="20170301 22:09:58.855"></status>
 </kw>
 <kw name="Click &quot;About these pages&quot; Tab" library="InfoPageNav">
 <kw name="Click Element" library="Selenium2Library">
@@ -212,10 +212,10 @@
 <arguments>
 <arg>${ABOUT_PAGES_TAB}</arg>
 </arguments>
-<msg timestamp="20170225 23:15:14.923" level="INFO">Clicking element 'css=#react-tabs-0'.</msg>
-<status status="PASS" endtime="20170225 23:15:15.115" starttime="20170225 23:15:14.923"></status>
+<msg timestamp="20170301 22:09:58.885" level="INFO">Clicking element 'css=#react-tabs-0'.</msg>
+<status status="PASS" endtime="20170301 22:09:59.000" starttime="20170301 22:09:58.885"></status>
 </kw>
-<status status="PASS" endtime="20170225 23:15:15.115" starttime="20170225 23:15:14.923"></status>
+<status status="PASS" endtime="20170301 22:09:59.000" starttime="20170301 22:09:58.885"></status>
 </kw>
 <kw name="Verify &quot;About these pages&quot; Page Loaded" library="Info">
 <kw name="Wait Until Page Contains" library="Selenium2Library">
@@ -223,46 +223,259 @@
 <arguments>
 <arg>Welcome</arg>
 </arguments>
-<status status="PASS" endtime="20170225 23:15:15.139" starttime="20170225 23:15:15.115"></status>
+<status status="PASS" endtime="20170301 22:09:59.014" starttime="20170301 22:09:59.001"></status>
 </kw>
-<status status="PASS" endtime="20170225 23:15:15.139" starttime="20170225 23:15:15.115"></status>
+<status status="PASS" endtime="20170301 22:09:59.014" starttime="20170301 22:09:59.000"></status>
 </kw>
-<status status="PASS" endtime="20170225 23:15:15.139" starttime="20170225 23:15:11.810"></status>
+<status status="PASS" endtime="20170301 22:09:59.014" starttime="20170301 22:09:57.066"></status>
 </kw>
 <doc>All "Information" page tabs work and open the right page</doc>
 <tags>
 <tag>Navigation</tag>
 </tags>
-<status status="PASS" endtime="20170225 23:15:15.143" critical="yes" starttime="20170225 23:15:11.810"></status>
+<status status="PASS" endtime="20170301 22:09:59.015" critical="yes" starttime="20170301 22:09:57.065"></status>
+</test>
+<test id="s1-t3" name="User can add new ToDo item">
+<kw name="Add new ToDo item" library="DemopageApp">
+<kw name="Click &quot;Demo Application&quot; Tab" library="TopNav">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${DEMO_TAB}</arg>
+</arguments>
+<msg timestamp="20170301 22:09:59.020" level="INFO">Clicking element 'xpath=//*[@id="todo-tab"]'.</msg>
+<status status="PASS" endtime="20170301 22:09:59.123" starttime="20170301 22:09:59.019"></status>
+</kw>
+<status status="PASS" endtime="20170301 22:09:59.123" starttime="20170301 22:09:59.019"></status>
+</kw>
+<kw name="Verify Page Loaded" library="Demo">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Todo</arg>
+</arguments>
+<status status="PASS" endtime="20170301 22:09:59.137" starttime="20170301 22:09:59.124"></status>
+</kw>
+<status status="PASS" endtime="20170301 22:09:59.137" starttime="20170301 22:09:59.124"></status>
+</kw>
+<kw name="Add Todo" library="Demo">
+<arguments>
+<arg>${TODO ITEM1}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@id="app"]/div/div[2]/div/div/div/div/div[3]/form/input</arg>
+<arg>${todo}</arg>
+</arguments>
+<msg timestamp="20170301 22:09:59.138" level="INFO">Typing text 'Todo item 1qaz2wsx' into text field 'xpath=//*[@id="app"]/div/div[2]/div/div/div/div/div[3]/form/input'</msg>
+<status status="PASS" endtime="20170301 22:09:59.317" starttime="20170301 22:09:59.138"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@id="app"]/div/div[2]/div/div/div/div/div[3]/form/button</arg>
+</arguments>
+<msg timestamp="20170301 22:09:59.317" level="INFO">Clicking button 'xpath=//*[@id="app"]/div/div[2]/div/div/div/div/div[3]/form/button'.</msg>
+<status status="PASS" endtime="20170301 22:09:59.458" starttime="20170301 22:09:59.317"></status>
+</kw>
+<status status="PASS" endtime="20170301 22:09:59.458" starttime="20170301 22:09:59.137"></status>
+</kw>
+<kw name="Verify ToDo Item Can Be Seen" library="Demo">
+<arguments>
+<arg>${TODO ITEM1}</arg>
+</arguments>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${todo}</arg>
+</arguments>
+<status status="PASS" endtime="20170301 22:09:59.699" starttime="20170301 22:09:59.459"></status>
+</kw>
+<status status="PASS" endtime="20170301 22:09:59.699" starttime="20170301 22:09:59.458"></status>
+</kw>
+<status status="PASS" endtime="20170301 22:09:59.699" starttime="20170301 22:09:59.018"></status>
+</kw>
+<doc>New ToDo item is added and can be found from the ToDos list</doc>
+<tags>
+<tag>ToDo</tag>
+</tags>
+<status status="PASS" endtime="20170301 22:09:59.700" critical="yes" starttime="20170301 22:09:59.017"></status>
+</test>
+<test id="s1-t4" name="User can complete a ToDo item">
+<kw name="Complete ToDo item" library="DemopageApp">
+<kw name="Click Existing Todo item" library="Demo">
+<arguments>
+<arg>${TODO ITEM1}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[contains(text(), '${todo}')]</arg>
+</arguments>
+<msg timestamp="20170301 22:09:59.706" level="INFO">Clicking element 'xpath=//*[contains(text(), 'Todo item 1qaz2wsx')]'.</msg>
+<status status="PASS" endtime="20170301 22:09:59.806" starttime="20170301 22:09:59.706"></status>
+</kw>
+<status status="PASS" endtime="20170301 22:09:59.806" starttime="20170301 22:09:59.705"></status>
+</kw>
+<kw name="Verify ToDo Item Can Not Be Seen" library="Demo">
+<arguments>
+<arg>${TODO ITEM1}</arg>
+</arguments>
+<kw name="Wait Until Page Does Not Contain" library="Selenium2Library">
+<doc>Waits until `text` disappears from current page.</doc>
+<arguments>
+<arg>${todo}</arg>
+</arguments>
+<status status="PASS" endtime="20170301 22:10:00.038" starttime="20170301 22:09:59.807"></status>
+</kw>
+<status status="PASS" endtime="20170301 22:10:00.039" starttime="20170301 22:09:59.806"></status>
+</kw>
+<status status="PASS" endtime="20170301 22:10:00.039" starttime="20170301 22:09:59.704"></status>
+</kw>
+<doc>Item in a ToDo list is marked as completed</doc>
+<tags>
+<tag>ToDo</tag>
+</tags>
+<status status="PASS" endtime="20170301 22:10:00.039" critical="yes" starttime="20170301 22:09:59.703"></status>
+</test>
+<test id="s1-t5" name="User can see completed ToDo item">
+<kw name="Show Completed ToDos" library="DemopageApp">
+<kw name="Click &quot;Show completed todos&quot; check box" library="Demo">
+<kw name="Select Checkbox" library="Selenium2Library">
+<doc>Selects checkbox identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@id="app"]/div/div[2]/div/div/div/div/div[1]/div[2]/label/input</arg>
+</arguments>
+<msg timestamp="20170301 22:10:00.045" level="INFO">Selecting checkbox 'xpath=//*[@id="app"]/div/div[2]/div/div/div/div/div[1]/div[2]/label/input'.</msg>
+<status status="PASS" endtime="20170301 22:10:00.166" starttime="20170301 22:10:00.045"></status>
+</kw>
+<status status="PASS" endtime="20170301 22:10:00.166" starttime="20170301 22:10:00.044"></status>
+</kw>
+<kw name="Verify ToDo Item Can Be Seen" library="Demo">
+<arguments>
+<arg>${TODO ITEM1}</arg>
+</arguments>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${todo}</arg>
+</arguments>
+<status status="PASS" endtime="20170301 22:10:00.180" starttime="20170301 22:10:00.167"></status>
+</kw>
+<status status="PASS" endtime="20170301 22:10:00.181" starttime="20170301 22:10:00.166"></status>
+</kw>
+<status status="PASS" endtime="20170301 22:10:00.181" starttime="20170301 22:10:00.044"></status>
+</kw>
+<doc>Completed item in a ToDo list can be seen if "Show completed todos" box is checked.</doc>
+<tags>
+<tag>ToDo</tag>
+</tags>
+<status status="PASS" endtime="20170301 22:10:00.182" critical="yes" starttime="20170301 22:10:00.042"></status>
+</test>
+<test id="s1-t6" name="User can search Todo items">
+<kw name="Search ToDos" library="DemopageApp">
+<kw name="Add Todo" library="Demo">
+<arguments>
+<arg>${TODO ITEM2}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@id="app"]/div/div[2]/div/div/div/div/div[3]/form/input</arg>
+<arg>${todo}</arg>
+</arguments>
+<msg timestamp="20170301 22:10:00.187" level="INFO">Typing text 'Todo item 3edc4rfv' into text field 'xpath=//*[@id="app"]/div/div[2]/div/div/div/div/div[3]/form/input'</msg>
+<status status="PASS" endtime="20170301 22:10:00.284" starttime="20170301 22:10:00.187"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@id="app"]/div/div[2]/div/div/div/div/div[3]/form/button</arg>
+</arguments>
+<msg timestamp="20170301 22:10:00.284" level="INFO">Clicking button 'xpath=//*[@id="app"]/div/div[2]/div/div/div/div/div[3]/form/button'.</msg>
+<status status="PASS" endtime="20170301 22:10:00.361" starttime="20170301 22:10:00.284"></status>
+</kw>
+<status status="PASS" endtime="20170301 22:10:00.361" starttime="20170301 22:10:00.186"></status>
+</kw>
+<kw name="Add Text to &quot;Search todos&quot; field" library="Demo">
+<arguments>
+<arg>${TODO ITEM1}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="app"]/div/div[2]/div/div/div/div/div[1]/div[1]/input</arg>
+<arg>${todo}</arg>
+</arguments>
+<msg timestamp="20170301 22:10:00.361" level="INFO">Typing text 'Todo item 1qaz2wsx' into text field '//*[@id="app"]/div/div[2]/div/div/div/div/div[1]/div[1]/input'</msg>
+<status status="PASS" endtime="20170301 22:10:00.517" starttime="20170301 22:10:00.361"></status>
+</kw>
+<status status="PASS" endtime="20170301 22:10:00.517" starttime="20170301 22:10:00.361"></status>
+</kw>
+<kw name="Verify ToDo Item Can Be Seen" library="Demo">
+<arguments>
+<arg>${TODO ITEM1}</arg>
+</arguments>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${todo}</arg>
+</arguments>
+<status status="PASS" endtime="20170301 22:10:00.536" starttime="20170301 22:10:00.518"></status>
+</kw>
+<status status="PASS" endtime="20170301 22:10:00.536" starttime="20170301 22:10:00.518"></status>
+</kw>
+<kw name="Verify ToDo Item Can Not Be Seen" library="Demo">
+<arguments>
+<arg>${TODO ITEM2}</arg>
+</arguments>
+<kw name="Wait Until Page Does Not Contain" library="Selenium2Library">
+<doc>Waits until `text` disappears from current page.</doc>
+<arguments>
+<arg>${todo}</arg>
+</arguments>
+<status status="PASS" endtime="20170301 22:10:00.564" starttime="20170301 22:10:00.537"></status>
+</kw>
+<status status="PASS" endtime="20170301 22:10:00.564" starttime="20170301 22:10:00.536"></status>
+</kw>
+<status status="PASS" endtime="20170301 22:10:00.564" starttime="20170301 22:10:00.186"></status>
+</kw>
+<doc>Items matching the search criteria are seen. Items that do not match search criteria are hidden.</doc>
+<tags>
+<tag>ToDo</tag>
+</tags>
+<status status="PASS" endtime="20170301 22:10:00.565" critical="yes" starttime="20170301 22:10:00.184"></status>
 </test>
 <kw type="teardown" name="End web test" library="Common">
 <kw name="Close Browser" library="Selenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20170225 23:15:18.296" starttime="20170225 23:15:15.155"></status>
+<status status="PASS" endtime="20170301 22:10:03.649" starttime="20170301 22:10:00.569"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>Cleaning up test data...</arg>
 </arguments>
-<msg timestamp="20170225 23:15:18.296" level="INFO">Cleaning up test data...</msg>
-<status status="PASS" endtime="20170225 23:15:18.296" starttime="20170225 23:15:18.296"></status>
+<msg timestamp="20170301 22:10:03.651" level="INFO">Cleaning up test data...</msg>
+<status status="PASS" endtime="20170301 22:10:03.651" starttime="20170301 22:10:03.650"></status>
 </kw>
-<status status="PASS" endtime="20170225 23:15:18.296" starttime="20170225 23:15:15.151"></status>
+<status status="PASS" endtime="20170301 22:10:03.652" starttime="20170301 22:10:00.569"></status>
 </kw>
 <doc>Robot Framework tests for the demo web page.</doc>
-<status status="PASS" endtime="20170225 23:15:18.296" starttime="20170225 23:15:01.187"></status>
+<status status="PASS" endtime="20170301 22:10:03.652" starttime="20170301 22:09:49.246"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="0" pass="2">Critical Tests</stat>
-<stat fail="0" pass="2">All Tests</stat>
+<stat fail="0" pass="6">Critical Tests</stat>
+<stat fail="0" pass="6">All Tests</stat>
 </total>
 <tag>
 <stat fail="0" pass="2">Navigation</stat>
+<stat fail="0" pass="4">ToDo</stat>
 </tag>
 <suite>
-<stat fail="0" id="s1" name="Demo" pass="2">Demo</stat>
+<stat fail="0" id="s1" name="Demo" pass="6">Demo</stat>
 </suite>
 </statistics>
 <errors>
