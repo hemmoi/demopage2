@@ -6,6 +6,7 @@ var Info = require('Info');
 var UnitTests = require('UnitTests');
 var Robot = require('Robot');
 var DemoTodo = require('DemoTodo');
+var JqueryDemo = require('JqueryDemo');
 
 
 // Load foundation
@@ -19,6 +20,7 @@ ReactDOM.render(
   <Router history={hashHistory}>
     <Route path="/" component={Main}>
       <Route path="todo" component={DemoTodo}/>
+      <Route path="jquery" component={JqueryDemo}/>
       <Route path="unit" component={UnitTests}/>
       <Route path="robot" component={Robot}/>
       <IndexRoute component={Info}/>

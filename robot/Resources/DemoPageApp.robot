@@ -13,7 +13,7 @@ Browse all top navigation tabs
 
     Info.Load Landing Page
 
-    TopNav.Click "Demo Application" Tab
+    TopNav.Click "Todo App" Tab
     Demo.Verify Page Loaded
 
     TopNav.Click "Unit Tests" Tab
@@ -43,7 +43,7 @@ Browse all tabs on the "Information" page
 
 Add new ToDo item
     [Arguments]                                     ${todo}
-    TopNav.Click "Demo Application" Tab
+    TopNav.Click "Todo App" Tab
     Demo.Verify Page Loaded
 
     Add Todo                                        ${todo}

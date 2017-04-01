@@ -14,6 +14,14 @@ export class TechList extends React.Component {
                 <td>AWS / S3 is used to store automated Unit and Robot Framework test reports.</td>
               </tr>
               <tr>
+                <td>AJAX</td>
+                <td>Tweeter application uses AJAX for communication.</td>
+              </tr>
+              <tr>
+                <td>Bootstrap 4</td>
+                <td>Tweeter application is styled using Bootstrap 4.</td>
+              </tr>
+              <tr>
                 <td>Firebase</td>
                 <td>Todo application uses Firebase as a database to store tasks.</td>
               </tr>
@@ -36,12 +44,24 @@ export class TechList extends React.Component {
                <td>Heroku is used as a production environment to host these pages.</td>
               </tr>
               <tr>
+               <td>jQuery</td>
+               <td>Tweeter application is implemented using jQuery and PHP.</td>
+              </tr>
+              <tr>
                <td>Karma</td>
                <td>Karma is used as a test runner for the automated unit tests.</td>
               </tr>
               <tr>
+               <td>MySQL</td>
+               <td>Tweeter application uses mySQL to store application data.</td>
+              </tr>
+              <tr>
                <td>Node.js</td>
                <td>Node.js is used for creating a runtime environment for development.</td>
+              </tr>
+              <tr>
+               <td>PHP</td>
+               <td>Tweeter application is implemented using jQuery and PHP.</td>
               </tr>
               <tr>
                <td>React</td>

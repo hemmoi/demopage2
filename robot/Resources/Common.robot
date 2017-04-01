@@ -2,6 +2,9 @@
 Library  Selenium2Library
 Resource  ../Resources/PO/Demo.robot
 
+*** Variables ***
+${BROWSER} =   firefox
+
 *** Keywords ***
 
 Begin test suite
