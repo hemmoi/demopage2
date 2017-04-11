@@ -21,8 +21,13 @@ export class About extends React.Component {
             I will be adding more material and upgrading these pages continuously as I learn new things. This is only the first release,
             so be sure to visit these pages frequently to see what kind of new and exciting things have been added.
           </p>
-
         </div>
+          <span className="label warning info-body"><strong>
+            <p>Note: These pages are not maintained anymore. Please visit my new and much <br/>improved Wordpress site for the latest info and demos! </p>
+            <p><a href="http://kimmo.azurewebsites.net/"> Wordpress portrfolio site </a> <br/></p>
+            <p> These pages are still valuable as a React coding demo, so please feel free to browse<br/> through the pages, try out the apps and study the test reports.  </p>
+            <p> Thank you and have an nice day! </p>
+          </strong></span>
       </div>
     )
   }
